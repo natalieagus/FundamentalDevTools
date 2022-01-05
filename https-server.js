@@ -7,11 +7,8 @@ const options = {
 };
 
 
-https
-  .createServer(options, function (req, res) {
-    res.writeHead(200);
-    setInterval(() => {
-      res.end("hello world\n");
-    }, 1000);
-  })
-  .listen(8080);
+https.createServer(options, function (req, res) {
+  res.writeHead(200);
+  res.end("My first server!\n");
+}).listen(8080);
+
